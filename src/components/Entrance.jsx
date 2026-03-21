@@ -132,7 +132,7 @@ function Entrance({ onEnter, partnerName, yourName }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
         >
-          Two beautiful years ✨
+          Two beautiful years 
         </motion.p>
 
         <motion.div
