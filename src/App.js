@@ -8,19 +8,16 @@
 // on screen. The components (Entrance, etc.) are the
 // channels. They don't control themselves; the remote does.
 
-import React, { useState } from 'react';
-import Entrance from './components/Entrance';
-import Stats from './components/Stats'
-import { AnimatePresence } from 'framer-motion';
-import './styles/globals.css';
-import './App.css';
+import React, { useState } from "react";
+import Entrance from "./components/Entrance";
+import Stats from "./components/Stats";
+import Letter from "./components/Letter";
+import { AnimatePresence } from "framer-motion";
+import "./styles/globals.css";
+import "./App.css";
 
-// ─────────────────────────────────────────────
-// ✏️  CUSTOMIZE THIS — put your names here!
-// ─────────────────────────────────────────────
-const YOUR_NAME = 'Ghab';
-const PARTNER_NAME = 'Yao';
-// ─────────────────────────────────────────────
+const YOUR_NAME = "Ghab";
+const PARTNER_NAME = "Yao";
 
 function App() {
   // ── The most important useState in this app ──
@@ -28,19 +25,18 @@ function App() {
   // "currentSection" tracks WHERE we are in the story.
   // It starts as 'entrance' and will change as the
   // user clicks through the sections.
-  const [currentSection, setCurrentSection] = useState('entrance');
+  const [currentSection, setCurrentSection] = useState("entrance");
 
   // ── Handler functions ──
   // These are functions we'll PASS DOWN as props to children.
   const handleEnter = () => {
-    setCurrentSection('stats');
+    setCurrentSection("stats");
   };
 
   return (
     <div className="app">
       <AnimatePresence mode="wait">
-
-        {currentSection === 'entrance' && (
+        {currentSection === "entrance" && (
           <Entrance
             key="entrance"
             yourName={YOUR_NAME}
@@ -49,15 +45,20 @@ function App() {
           />
         )}
 
-        {/* Placeholder — we'll replace this with the real Stats section next! */}
-        {currentSection === 'stats' && (
-          <Stats onBack = {() => setCurrentSection('entrance')}/>
+        {currentSection === "stats" && (
+          <Stats
+            onBack={() => setCurrentSection("entrance")}
+            onNext={() => setCurrentSection("letter")}
+          />
         )}
 
+        {currentSection === "letter" && (
+          <Letter onBack={() => setCurrentSection("stats")} />
+        )}
+        
       </AnimatePresence>
     </div>
   );
 }
 
 export default App;
-

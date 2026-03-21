@@ -4,6 +4,8 @@
 @import '@fontsource/playfair-display/700.css';
 @import '@fontsource/lato/300.css';
 @import '@fontsource/lato/400.css';
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 
 /* --- CSS Variables (our design system) --- */
 :root {
@@ -18,6 +20,8 @@
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Lato', sans-serif;
+  --font-typewriter: 'Special Elite', cursive;
+
 }
 
 /* --- Reset & Base --- */
@@ -39,3 +43,4 @@ h1, h2, h3 {
   font-family: var(--font-display);
   font-weight: 700;
 }
+

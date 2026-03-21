@@ -1,0 +1,41 @@
+.letter {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(201, 169, 110, 0.1) 0%,
+      transparent 70%
+    ),
+    var(--color-cream);
+  padding: 2rem;
+}
+
+.letter-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.letter-paper {
+  background: #fdf8f0;
+  max-width: 650px;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-rose-light);
+}
+
+.letter-text {
+  font-family: var(--font-typewriter);
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--color-text);
+}
