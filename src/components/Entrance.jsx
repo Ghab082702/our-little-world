@@ -6,9 +6,9 @@
 //
 // You'll see both explained with comments as you read!
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import './Entrance.css';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import "./Entrance.css";
 
 // ─────────────────────────────────────────────
 // 🧩 FloatingPetal — A small "dumb" component
@@ -36,7 +36,7 @@ function FloatingPetal({ style }) {
       transition={{
         duration: style.animDuration,
         repeat: Infinity,
-        ease: 'easeInOut',
+        ease: "easeInOut",
       }}
     >
       🌸
@@ -68,14 +68,14 @@ function Entrance({ onEnter, partnerName, yourName }) {
 
   // Petal data — positions & sizes for our floating petals
   const petals = [
-    { top: '10%', left: '5%',  fontSize: '1.5rem', animDuration: 3.2 },
-    { top: '20%', right: '8%', fontSize: '1.2rem', animDuration: 2.8 },
-    { top: '60%', left: '3%',  fontSize: '1.8rem', animDuration: 3.5 },
-    { top: '75%', right: '6%', fontSize: '1.3rem', animDuration: 2.5 },
-    { top: '40%', left: '12%', fontSize: '1rem',   animDuration: 4.0 },
-    { top: '50%', right: '15%',fontSize: '1.6rem', animDuration: 3.0 },
-    { top: '85%', left: '20%', fontSize: '1.1rem', animDuration: 2.7 },
-    { top: '15%', left: '45%', fontSize: '1.4rem', animDuration: 3.8 },
+    { top: "10%", left: "5%", fontSize: "1.5rem", animDuration: 3.2 },
+    { top: "20%", right: "8%", fontSize: "1.2rem", animDuration: 2.8 },
+    { top: "60%", left: "3%", fontSize: "1.8rem", animDuration: 3.5 },
+    { top: "75%", right: "6%", fontSize: "1.3rem", animDuration: 2.5 },
+    { top: "40%", left: "12%", fontSize: "1rem", animDuration: 4.0 },
+    { top: "50%", right: "15%", fontSize: "1.6rem", animDuration: 3.0 },
+    { top: "85%", left: "20%", fontSize: "1.1rem", animDuration: 2.7 },
+    { top: "15%", left: "45%", fontSize: "1.4rem", animDuration: 3.8 },
   ];
 
   return (
@@ -122,9 +122,9 @@ function Entrance({ onEnter, partnerName, yourName }) {
           {yourName} <span className="ampersand">&</span> {partnerName}
         </motion.h1>
         {/*            ↑↑↑↑↑↑↑↑ ↑↑↑↑↑↑↑↑↑↑↑↑↑
-          * These are PROPS from App.js!
-          * We just display whatever the parent gave us.
-        */}
+         * These are PROPS from App.js!
+         * We just display whatever the parent gave us.
+         */}
 
         <motion.p
           className="entrance-subtitle"
@@ -132,7 +132,7 @@ function Entrance({ onEnter, partnerName, yourName }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
         >
-          Two beautiful years 
+          Two beautiful years
         </motion.p>
 
         <motion.div
@@ -144,7 +144,7 @@ function Entrance({ onEnter, partnerName, yourName }) {
 
         {/* ── Button using isHovered state ── */}
         <motion.button
-          className={`enter-button ${isHovered ? 'hovered' : ''}`}
+          className={`enter-button ${isHovered ? "hovered" : ""}`}
           //                         ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
           // We conditionally add a CSS class based on state.
           // This is called a "ternary operator":

@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 import "./Stats.css";
 import React, { useState, useEffect } from "react";
 
-function Stats() {
+function Stats({onBack}) {
   const [timeElapsed, setTimeElapsed] = useState({
     years: 0,
     months: 0,
@@ -76,6 +76,9 @@ function Stats() {
             <span className="stat-label">Seconds</span>
           </div>
         </div>
+        <button className = "back-button" onClick = {onBack}> 
+          ← Back
+        </button>
       </div>
     </div>
   );

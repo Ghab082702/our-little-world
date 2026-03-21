@@ -51,7 +51,7 @@ function App() {
 
         {/* Placeholder — we'll replace this with the real Stats section next! */}
         {currentSection === 'stats' && (
-          <Stats/>
+          <Stats onBack = {() => setCurrentSection('entrance')}/>
         )}
 
       </AnimatePresence>
