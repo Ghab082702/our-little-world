@@ -1,0 +1,41 @@
+/* ✨ Our Little World — Global Styles ✨ */
+
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/lato/300.css';
+@import '@fontsource/lato/400.css';
+
+/* --- CSS Variables (our design system) --- */
+:root {
+  --color-cream: #fdf6f0;
+  --color-rose: #e8a4a4;
+  --color-rose-dark: #c47a7a;
+  --color-rose-light: #f5d5d5;
+  --color-sage: #a8b5a0;
+  --color-gold: #c9a96e;
+  --color-text: #4a3728;
+  --color-text-light: #8a7060;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+/* --- Reset & Base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+}

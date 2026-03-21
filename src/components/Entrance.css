@@ -1,0 +1,102 @@
+/* 🌸 Entrance Section Styles */
+
+.entrance {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: 
+    radial-gradient(ellipse at 20% 50%, rgba(232, 164, 164, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(201, 169, 110, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(168, 181, 160, 0.12) 0%, transparent 50%),
+    var(--color-cream);
+}
+
+/* Floating petals */
+.petal {
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Center content */
+.entrance-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  z-index: 1;
+  padding: 2rem;
+}
+
+/* Decorative gold divider line */
+.divider {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+  transform-origin: center;
+}
+
+.entrance-label {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.85rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+}
+
+.entrance-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 1.15;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.ampersand {
+  color: var(--color-rose-dark);
+  font-style: italic;
+}
+
+.entrance-subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
+}
+
+/* The "Open Our Story" button */
+.enter-button {
+  margin-top: 0.5rem;
+  padding: 1rem 2.4rem;
+  background: transparent;
+  border: 1.5px solid var(--color-rose-dark);
+  color: var(--color-rose-dark);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.enter-button.hovered {
+  background: var(--color-rose-dark);
+  color: var(--color-cream);
+}
+
+.button-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-left: 4px;
+}
+
+.enter-button.hovered .button-arrow {
+  transform: translateX(5px);
+}
