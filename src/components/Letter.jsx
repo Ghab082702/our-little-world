@@ -20,6 +20,9 @@ const Letter = ({ onNext, onBack }) => {
       <button className="back-button" onClick={onBack}>
         ← Back
       </button>
+      <button className="front-button" onClick={onNext}>
+        Next →
+      </button>
     </div>
   );
 };
