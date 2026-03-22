@@ -12,6 +12,7 @@ import React, { useState } from "react";
 import Entrance from "./components/Entrance";
 import Stats from "./components/Stats";
 import Letter from "./components/Letter";
+import Stars from "./components/Stars";
 import { AnimatePresence } from "framer-motion";
 import "./styles/globals.css";
 import "./App.css";
@@ -53,9 +54,18 @@ function App() {
         )}
 
         {currentSection === "letter" && (
-          <Letter onBack={() => setCurrentSection("stats")} />
+          <Letter
+            onBack={() => setCurrentSection("stats")}
+            onNext={() => setCurrentSection("stars")}
+          />
         )}
-        
+
+          {currentSection === "stars" && (
+          <Stars
+            onBack={() => setCurrentSection("letter")}
+
+          />
+        )}
       </AnimatePresence>
     </div>
   );

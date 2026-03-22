@@ -1,0 +1,149 @@
+.stars {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a2e;
+  padding: 2rem;
+}
+
+.stars-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 2.5rem); /* ← responsive font */
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.stars-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2rem;
+}
+
+.stars-scene {
+  position: relative;
+  width: 90vw;            /* ← 90% of screen width */
+  max-width: 600px;       /* ← but never bigger than 600px */
+  height: 60vh;           /* ← 60% of screen height */
+  min-height: 400px;      /* ← never smaller than 400px */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: radial-gradient(ellipse at 50% 50%, #1a1a4e 0%, #0a0a2e 100%);
+  overflow: hidden;
+}
+
+.stars-object {
+  position: absolute;
+  font-size: clamp(1.5rem, 3vw, 2rem); /* ← responsive size */
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.stars-object:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+.stars-object.found {
+  opacity: 1;
+  animation: glow 1.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px gold, 0 0 20px gold;
+  }
+  50% {
+    text-shadow: 0 0 20px gold, 0 0 40px gold, 0 0 60px gold;
+  }
+}
+
+.memory-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(10, 10, 46, 0.95);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  isolation: isolate;
+  z-index: 10;
+  width: 85%;
+  max-height: 90%;        /* ← generous max height */
+  overflow-y: auto;       /* ← scroll only when needed */
+  scrollbar-width: none;  /* ← hides scrollbar on Firefox */
+}
+
+/* hides scrollbar on Chrome */
+.memory-card::-webkit-scrollbar {
+  display: none;
+}
+
+.memory-image {
+  width: 100%;
+  height: clamp(120px, 25vh, 200px); /* ← responsive height */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.memory-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: clamp(0.85rem, 2vw, 1rem); /* ← responsive font */
+}
+
+.memory-close {
+  background: none;
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  color: gold;
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.memory-close:hover {
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.stars-decorative {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.6;
+  user-select: none;
+  font-size: clamp(1rem, 2.5vw, 1.8rem); /* ← responsive size */
+}
+
+.stars-back-button {
+  margin-top: 2rem;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.stars-back-button:hover {
+  border-color: gold;
+  color: gold;
+}
