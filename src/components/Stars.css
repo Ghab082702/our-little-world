@@ -147,3 +147,22 @@
   border-color: gold;
   color: gold;
 }
+
+
+.stars-front-button {
+  margin-top: 2rem;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.stars-front-button:hover {
+  border-color: gold;
+  color: gold;
+}

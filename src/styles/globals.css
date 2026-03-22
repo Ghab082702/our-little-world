@@ -5,6 +5,8 @@
 @import '@fontsource/lato/300.css';
 @import '@fontsource/lato/400.css';
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap');
+
 
 
 /* --- CSS Variables (our design system) --- */
@@ -20,7 +22,7 @@
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Lato', sans-serif;
-  --font-typewriter: 'Special Elite', cursive;
+  --font-typewriter: 'Cormorant Garamond', Georgia, serif;
 
 }
 

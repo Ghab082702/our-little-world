@@ -13,6 +13,7 @@ import Entrance from "./components/Entrance";
 import Stats from "./components/Stats";
 import Letter from "./components/Letter";
 import Stars from "./components/Stars";
+import Closing from "./components/Closing";
 import { AnimatePresence } from "framer-motion";
 import "./styles/globals.css";
 import "./App.css";
@@ -63,7 +64,13 @@ function App() {
           {currentSection === "stars" && (
           <Stars
             onBack={() => setCurrentSection("letter")}
+            onNext={() => setCurrentSection("closing")}
+          />
+        )}
 
+          {currentSection === "closing" && (
+          <Closing
+            onBack={() => setCurrentSection("stars")}
           />
         )}
       </AnimatePresence>

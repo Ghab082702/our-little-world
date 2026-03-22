@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import starsData from "../data/starsData.js";
 import "./Stars.css";
 
-function Stars({ onBack }) {
+function Stars({ onBack, onNext }) {
   const [foundIds, setFoundIds] = useState([]);
   const [selectedObject, setSelectedObject] = useState(null);
 
@@ -78,6 +78,9 @@ function Stars({ onBack }) {
       </div>
       <button className="stars-back-button" onClick={onBack}>
         ← Back
+      </button>
+         <button className="stars-front-button" onClick={onNext}>
+        Next →
       </button>
     </div>
   );
