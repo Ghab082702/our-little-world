@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/our-little-world/static/css/main.49897176.css",
+    "main.js": "/our-little-world/static/js/main.21f1df01.js",
+    "static/js/453.515788d1.chunk.js": "/our-little-world/static/js/453.515788d1.chunk.js",
+    "static/media/graduation.jpg": "/our-little-world/static/media/graduation.83a89b4f3a4b28969151.jpg",
+    "static/media/ivos.jpg": "/our-little-world/static/media/ivos.325bdce1dc3c5ea13c7b.jpg",
+    "static/media/prcDinner.jpg": "/our-little-world/static/media/prcDinner.5bd0e162f281fe488062.jpg",
+    "static/media/prayer.jpg": "/our-little-world/static/media/prayer.4e4ed84c5295193ae3a9.jpg",
+    "static/media/playfair-display-latin-700-normal.woff": "/our-little-world/static/media/playfair-display-latin-700-normal.2e7ea282291dce958a61.woff",
+    "static/media/playfair-display-latin-400-normal.woff": "/our-little-world/static/media/playfair-display-latin-400-normal.bee8cc9108d1713a64fe.woff",
+    "static/media/lato-latin-400-normal.woff2": "/our-little-world/static/media/lato-latin-400-normal.be36596da218e1eec01c.woff2",
+    "static/media/lato-latin-300-normal.woff2": "/our-little-world/static/media/lato-latin-300-normal.dc76fa21c09d3cec2243.woff2",
+    "static/media/playfair-display-latin-700-normal.woff2": "/our-little-world/static/media/playfair-display-latin-700-normal.62fc3d7c8ed6e0fe1e5a.woff2",
+    "static/media/playfair-display-latin-400-normal.woff2": "/our-little-world/static/media/playfair-display-latin-400-normal.b029bd8deea1857dca78.woff2",
+    "static/media/lato-latin-300-normal.woff": "/our-little-world/static/media/lato-latin-300-normal.60a1fc9096fe55643239.woff",
+    "static/media/lato-latin-400-normal.woff": "/our-little-world/static/media/lato-latin-400-normal.190b769c7be76a0f0dbf.woff",
+    "static/media/playfair-display-latin-ext-700-normal.woff": "/our-little-world/static/media/playfair-display-latin-ext-700-normal.338ee960fa00e4cd1422.woff",
+    "static/media/playfair-display-latin-ext-400-normal.woff": "/our-little-world/static/media/playfair-display-latin-ext-400-normal.344be0f737d2c31c593b.woff",
+    "static/media/playfair-display-cyrillic-700-normal.woff": "/our-little-world/static/media/playfair-display-cyrillic-700-normal.cdb3d28d3127d9f98ee9.woff",
+    "static/media/playfair-display-cyrillic-400-normal.woff": "/our-little-world/static/media/playfair-display-cyrillic-400-normal.e3a78aea522f18fb9c48.woff",
+    "static/media/playfair-display-latin-ext-700-normal.woff2": "/our-little-world/static/media/playfair-display-latin-ext-700-normal.5cf66780fdbf0cd89db4.woff2",
+    "static/media/playfair-display-cyrillic-700-normal.woff2": "/our-little-world/static/media/playfair-display-cyrillic-700-normal.8808357ba94162839a99.woff2",
+    "static/media/playfair-display-latin-ext-400-normal.woff2": "/our-little-world/static/media/playfair-display-latin-ext-400-normal.8ce6bf649a6d701cc7bd.woff2",
+    "static/media/playfair-display-cyrillic-400-normal.woff2": "/our-little-world/static/media/playfair-display-cyrillic-400-normal.3e29ef2976b4f862c76d.woff2",
+    "static/media/playfair-display-vietnamese-700-normal.woff": "/our-little-world/static/media/playfair-display-vietnamese-700-normal.d58e72db9234ac598541.woff",
+    "static/media/playfair-display-vietnamese-400-normal.woff": "/our-little-world/static/media/playfair-display-vietnamese-400-normal.d45ab2750440282037f2.woff",
+    "static/media/lato-latin-ext-300-normal.woff2": "/our-little-world/static/media/lato-latin-ext-300-normal.efbf27b7525a6839d51c.woff2",
+    "static/media/playfair-display-vietnamese-700-normal.woff2": "/our-little-world/static/media/playfair-display-vietnamese-700-normal.0489b7c29db902f4b52a.woff2",
+    "static/media/lato-latin-ext-400-normal.woff2": "/our-little-world/static/media/lato-latin-ext-400-normal.7c938e0eb1bed0788b8e.woff2",
+    "static/media/playfair-display-vietnamese-400-normal.woff2": "/our-little-world/static/media/playfair-display-vietnamese-400-normal.7506359a0cc8a53ebcc8.woff2",
+    "static/media/lato-latin-ext-400-normal.woff": "/our-little-world/static/media/lato-latin-ext-400-normal.fb0aa12c0b659961ab32.woff",
+    "static/media/lato-latin-ext-300-normal.woff": "/our-little-world/static/media/lato-latin-ext-300-normal.c3dcdd7cacc1979c9c1d.woff",
+    "index.html": "/our-little-world/index.html",
+    "main.49897176.css.map": "/our-little-world/static/css/main.49897176.css.map",
+    "main.21f1df01.js.map": "/our-little-world/static/js/main.21f1df01.js.map",
+    "453.515788d1.chunk.js.map": "/our-little-world/static/js/453.515788d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49897176.css",
+    "static/js/main.21f1df01.js"
+  ]
+}
